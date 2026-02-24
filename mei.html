@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-TZKVZTZM');</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17955646189"></script>
+    <script>
+        window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-17955646189');
+        function gtag_report_conversion(url) { var callback = function () { if (typeof (url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-17955646189/mnbYCMuvjfkbEO3V9fFC', 'event_callback': callback }); return false; }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synexus | Contabilidade para MEI — Proteja seu CNPJ</title>
+    <meta name="description"
+        content="Mais de 29% dos MEIs são cancelados por irregularidades. Não seja o próximo. Assessoria contábil especializada para Microempreendedores Individuais.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary-amber: #f59e0b;
+            --primary-amber-dark: #d97706;
+            --primary-amber-darker: #b45309;
+            --bg-dark: #0f172a;
+            --bg-dark-secondary: #1e293b;
+            --bg-light: #f8fafc;
+            --text-dark: #0f172a;
+            --text-gray: #475569;
+            --text-light: #94a3b8;
+            --white: #ffffff;
+            --glass-bg: rgba(255, 255, 255, 0.08);
+            --glass-border: rgba(255, 255, 255, 0.15);
+            --shadow-amber: 0 4px 14px rgba(245, 158, 11, 0.35);
+            --radius-sm: 0.5rem;
+            --radius-md: 0.75rem;
+            --radius-lg: 1rem;
+            --radius-xl: 1.5rem;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --danger: #ef4444;
+            --danger-dark: #dc2626;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--white);
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-dark-secondary) 50%, #422006 100%);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: var(--transition);
+        }
+
+        header.scrolled {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 80px;
+            max-height: 80px;
+            width: auto;
+            max-width: 280px;
+            object-fit: contain;
+            transition: var(--transition);
+        }
+
+        .logo img:hover {
+            transform: scale(1.02);
+        }
+
+        .nav-desktop {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            background: none;
+            border: none;
+            color: rgba(255, 255, 255, 0.85);
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 0.95rem;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary-amber), var(--primary-amber-dark));
+            transition: var(--transition);
+        }
+
+        .nav-link:hover {
+            color: var(--primary-amber);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-link.cta {
+            background: linear-gradient(135deg, var(--primary-amber), var(--primary-amber-dark));
+            color: var(--white);
+            padding: 0.75rem 1.75rem;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-amber);
+            font-weight: 600;
+        }
+
+        .nav-link.cta::after {
+            display: none;
+        }
+
+        .nav-link.cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(245, 158, 11, 0.45);
+            color: var(--white);
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            color: var(--white);
+            font-size: 1.5rem;
+        }
+
+        .nav-mobile {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-dark-secondary) 100%);
+            padding: 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-mobile.active {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .nav-mobile .nav-link {
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            text-align: left;
+        }
+
+        .nav-mobile .nav-link:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        @media(max-width:768px) {
+            .nav-desktop {
+                display: none;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .logo img {
+                height: 60px;
+                max-height: 60px;
+                max-width: 200px;
+            }
+        }
+
+        /* URGENCY BAR */
+        .urgency-bar {
+            background: linear-gradient(90deg, var(--danger), var(--danger-dark), #b91c1c);
+            color: var(--white);
+            text-align: center;
+            padding: 0.6rem 1rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 200;
+            animation: urgencyPulse 3s ease-in-out infinite;
+        }
+
+        .urgency-bar span {
+            color: #fbbf24;
+            font-weight: 800;
+        }
+
+        @keyframes urgencyPulse {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.85;
+            }
+        }
+
+        header {
+            top: 36px;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-dark-secondary) 50%, #422006 100%);
+            padding: 10rem 0 5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: radial-gradient(circle at 70% 30%, rgba(239, 68, 68, 0.1), transparent 60%);
+            pointer-events: none;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-text {
+            color: var(--white);
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(239, 68, 68, 0.15);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.85rem;
+            color: var(--danger);
+            margin-bottom: 1.5rem;
+            backdrop-filter: blur(10px);
+            font-weight: 600;
+            animation: badgePulse 2s ease-in-out infinite;
+        }
+
+        @keyframes badgePulse {
+
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.3);
+            }
+
+            50% {
+                box-shadow: 0 0 0 8px rgba(239, 68, 68, 0);
+            }
+        }
+
+        .hero-title {
+            font-size: clamp(2.2rem, 5vw, 3.8rem);
+            font-weight: 900;
+            line-height: 1.08;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-title .highlight {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b, #d97706);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-title .danger {
+            color: var(--danger);
+        }
+
+        .hero-description {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+            max-width: 90%;
+        }
+
+        .hero-stats-inline {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-stat {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            border-radius: var(--radius-md);
+            padding: 1rem 1.25rem;
+            text-align: center;
+            flex: 1;
+            min-width: 120px;
+        }
+
+        .hero-stat-number {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: var(--danger);
+            display: block;
+        }
+
+        .hero-stat-label {
+            font-size: 0.75rem;
+            color: var(--text-light);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* FORM CARD */
+        .form-card {
+            background: rgba(16, 185, 129, 0.06);
+            backdrop-filter: blur(20px);
+            border: 2px solid rgba(16, 185, 129, 0.4);
+            border-radius: var(--radius-xl);
+            padding: 2.5rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 40px rgba(16, 185, 129, 0.15), 0 0 80px rgba(16, 185, 129, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .form-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #10b981, #34d399, #059669);
+        }
+
+        .form-card h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+
+        .form-card .form-subtitle {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .form-card .form-urgency {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            border-radius: var(--radius-sm);
+            padding: 0.75rem;
+            text-align: center;
+            margin-bottom: 1.25rem;
+            color: var(--danger);
+            font-size: 0.85rem;
+            font-weight: 600;
+            animation: urgencyPulse 2s infinite;
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.875rem 1rem;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: var(--radius-md);
+            color: var(--white);
+            font-family: inherit;
+            font-size: 1rem;
+            transition: var(--transition);
+            outline: none;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: var(--primary-amber);
+            background: rgba(255, 255, 255, 0.12);
+            box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.15);
+        }
+
+        .form-group select option {
+            background: #1a1a2e;
+            color: #ffffff;
+            padding: 0.75rem;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            border-radius: var(--radius-md);
+            border: none;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            font-family: inherit;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-amber), var(--primary-amber-dark));
+            color: var(--white);
+            box-shadow: var(--shadow-amber);
+            width: 100%;
+            font-size: 1.05rem;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(245, 158, 11, 0.5);
+        }
+
+        .btn-danger {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: var(--white);
+            box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
+            width: 100%;
+            font-size: 1.05rem;
+        }
+
+        .btn-danger:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(16, 185, 129, 0.5);
+        }
+
+        /* NEWS TICKER */
+        .news-section {
+            padding: 4rem 0;
+            background: var(--bg-light);
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .news-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            border: 1px solid rgba(239, 68, 68, 0.15);
+            padding: 1.75rem;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .news-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--danger), var(--primary-amber));
+        }
+
+        .news-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            border-color: var(--danger);
+        }
+
+        .news-source {
+            font-size: 0.75rem;
+            color: var(--danger);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+
+        .news-card h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+        }
+
+        .news-card p {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+            line-height: 1.7;
+        }
+
+        /* PROBLEMS SECTION */
+        .problems {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, #1a0000 0%, var(--bg-dark) 40%, #3b0000 100%);
+            position: relative;
+        }
+
+        .problems .section-title {
+            color: var(--white);
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .problems .section-subtitle {
+            color: var(--text-light);
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            font-size: 1.1rem;
+        }
+
+        .problems-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .problem-card {
+            background: rgba(239, 68, 68, 0.06);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(239, 68, 68, 0.15);
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            transition: var(--transition);
+        }
+
+        .problem-card:hover {
+            transform: translateY(-6px);
+            background: rgba(239, 68, 68, 0.1);
+            border-color: rgba(239, 68, 68, 0.3);
+        }
+
+        .problem-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .problem-card h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--danger);
+            margin-bottom: 0.75rem;
+        }
+
+        .problem-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* SOLUTION CTA */
+        .solution-cta {
+            padding: 5rem 0;
+            background: var(--white);
+            text-align: center;
+        }
+
+        .solution-cta .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .solution-cta .section-title .highlight {
+            background: linear-gradient(135deg, var(--primary-amber), var(--primary-amber-dark));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .solution-cta .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-gray);
+            max-width: 700px;
+            margin: 0 auto 3rem;
+        }
+
+        .solution-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .solution-card {
+            background: var(--bg-light);
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+
+        .solution-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary-amber);
+        }
+
+        .solution-icon {
+            width: 3.5rem;
+            height: 3.5rem;
+            background: linear-gradient(135deg, var(--primary-amber), var(--primary-amber-dark));
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin: 0 auto 1.5rem;
+            box-shadow: var(--shadow-amber);
+        }
+
+        .solution-card h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 0.75rem;
+        }
+
+        .solution-card p {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+
+        /* FINAL CTA */
+        .final-cta {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-dark-secondary) 50%, #422006 100%);
+            text-align: center;
+            position: relative;
+        }
+
+        .final-cta .section-title {
+            color: var(--white);
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+        }
+
+        .final-cta .section-subtitle {
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto 2.5rem;
+            font-size: 1.05rem;
+        }
+
+        .final-form-wrapper {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--bg-dark);
+            color: var(--white);
+            padding: 3rem 0 2rem;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            text-align: center;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .footer-brand {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .footer-brand img {
+            height: 80px;
+            width: auto;
+            object-fit: contain;
+            margin-bottom: 1rem;
+        }
+
+        .footer-brand p {
+            color: var(--text-light);
+            max-width: 400px;
+            margin: 0 auto 1rem;
+            line-height: 1.8;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 0.75rem;
+            justify-content: center;
+        }
+
+        .social-link {
+            width: 2.5rem;
+            height: 2.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+            font-weight: 600;
+        }
+
+        .social-link:hover {
+            background: var(--primary-amber);
+            transform: translateY(-2px);
+        }
+
+        .success-message {
+            display: none;
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: var(--white);
+            padding: 1rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+            margin-top: 1rem;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* COUNTER ANIMATION */
+        .counter-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(239, 68, 68, 0.15);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.8rem;
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .counter-badge .dot {
+            width: 8px;
+            height: 8px;
+            background: var(--danger);
+            border-radius: 50%;
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.3;
+            }
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 3.5rem;
+            height: 3.5rem;
+            background-color: #25d366;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            background-color: #128c7e;
+        }
+
+        @media(max-width:1024px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-description {
+                max-width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-stats-inline {
+                justify-content: center;
+            }
+
+            .form-card {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .problems-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .solution-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media(max-width:640px) {
+            .hero {
+                padding: 8rem 0 3rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .urgency-bar {
+                font-size: 0.75rem;
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TZKVZTZM" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+
+    <!-- URGENCY BAR -->
+    <div class="urgency-bar">⚠️ <span>29,3% dos MEIs</span> foram cancelados em 2024 por irregularidades fiscais —
+        <span>Proteja-se agora</span>
+    </div>
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="header-content">
+            <a href="#" class="logo"><img
+                    src="https://yuaxrzcuqtuhxxvwmiuw.supabase.co/storage/v1/object/public/temp/synexus_logo.png"
+                    alt="Synexus Soluções Empresariais"></a>
+            <nav class="nav-desktop">
+                <button class="nav-link" onclick="scrollToSection('hero')">Início</button>
+                <button class="nav-link" onclick="scrollToSection('problemas')">Riscos do MEI</button>
+                <button class="nav-link" onclick="scrollToSection('solucoes')">Como Ajudamos</button>
+                <button class="nav-link cta" onclick="scrollToSection('meiName')">Proteja seu MEI →</button>
+            </nav>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menu">☰</button>
+        </div>
+        <nav class="nav-mobile" id="navMobile">
+            <button class="nav-link" onclick="scrollToSection('hero')">Início</button>
+            <button class="nav-link" onclick="scrollToSection('problemas')">Riscos do MEI</button>
+            <button class="nav-link" onclick="scrollToSection('solucoes')">Como Ajudamos</button>
+            <button class="nav-link cta" onclick="scrollToSection('meiName')">Proteja seu MEI →</button>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <div class="hero-badge">🚨 ALERTA PARA MICROEMPREENDEDORES</div>
+                    <h1 class="hero-title">Seu MEI pode ser <span class="danger">cancelado</span> e você nem <span
+                            class="highlight">sabe disso</span></h1>
+                    <p class="hero-description">A cada ano, milhões de MEIs são multados, desenquadrados ou cancelados
+                        por falta de assessoria contábil. As regras mudam o tempo todo. A fiscalização aperta. E quem
+                        não se
+                        protege, paga caro.</p>
+                    <div class="hero-stats-inline">
+                        <div class="hero-stat"><span class="hero-stat-number">3,7M</span><span
+                                class="hero-stat-label">MEIs cancelados em 2025</span></div>
+                        <div class="hero-stat"><span class="hero-stat-number">R$50B</span><span
+                                class="hero-stat-label">Em multas aplicadas</span></div>
+                        <div class="hero-stat"><span class="hero-stat-number">83%</span><span
+                                class="hero-stat-label">Não têm contador</span></div>
+                    </div>
+                </div>
+                <div class="form-card">
+                    <h3>🛡️ Proteja seu MEI Agora</h3>
+                    <p class="form-subtitle">Consultoria gratuita — resposta em até 24h</p>
+                    <div class="form-urgency">⏰ As vagas para consultoria gratuita são limitadas.</div>
+                    <form id="heroForm" onsubmit="handleFormSubmit(event,'heroForm')">
+                        <div class="form-row">
+                            <div class="form-group"><label for="meiName">Nome</label><input type="text" id="meiName"
+                                    name="name" placeholder="Seu nome" required></div>
+                            <div class="form-group"><label for="meiPhone">Telefone</label><input type="tel"
+                                    id="meiPhone" name="phone" placeholder="(00) 00000-0000" required></div>
+                        </div>
+                        <div class="form-group"><label for="meiService">Qual sua situação?</label>
+                            <select id="meiService" name="service">
+                                <option value="Quero abrir MEI">Quero abrir meu MEI</option>
+                                <option value="MEI com pendências">Meu MEI tem pendências</option>
+                                <option value="Declaração DASN atrasada">Declaração anual atrasada (DASN)</option>
+                                <option value="DAS atrasado">DAS em atraso</option>
+                                <option value="Faturamento acima do limite">Faturamento acima do limite</option>
+                                <option value="Desenquadramento MEI">Preciso desenquadrar o MEI</option>
+                                <option value="Consultoria MEI geral">Quero assessoria contábil para MEI</option>
+                                <option value="Outros">Outra situação</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-danger">QUERO PROTEGER MEU MEI AGORA →</button>
+                        <div class="success-message" id="heroSuccess">✓ Mensagem enviada! Entraremos em contato em
+                            breve.</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWS SECTION -->
+    <section class="news-section" id="noticias">
+        <div class="container">
+            <div style="text-align:center;margin-bottom:3rem;">
+                <h2
+                    style="font-size:clamp(1.8rem,4vw,2.5rem);font-weight:800;color:var(--text-dark);margin-bottom:0.75rem;">
+                    O que a mídia está dizendo <span style="color:var(--danger);">sobre os MEIs</span></h2>
+                <p style="color:var(--text-gray);max-width:600px;margin:0 auto;font-size:1.05rem;">Esses não são
+                    cenários hipotéticos. São manchetes reais do Brasil.</p>
+            </div>
+            <div class="news-grid">
+                <div class="news-card animate-on-scroll">
+                    <div class="news-source">📰 Receita Federal — 2024</div>
+                    <h3>"Receita Federal cancela 3,7 milhões de CNPJs de MEIs inadimplentes"</h3>
+                    <p>MEIs que não pagaram o DAS por 12 meses ou mais tiveram seus CNPJs cancelados automaticamente,
+                        perdendo acesso a benefícios previdenciários e capacidade de emitir notas.</p>
+                </div>
+                <div class="news-card animate-on-scroll">
+                    <div class="news-source">📰 Sebrae — 2025</div>
+                    <h3>"Novo limite do MEI ainda não cobre a realidade: 40% faturam acima do teto"</h3>
+                    <p>Pesquisa revela que quase metade dos MEIs brasileiros ultrapassam o limite de faturamento anual e
+                        ficam sujeitos a desenquadramento, multas retroativas e impostos não pagos.</p>
+                </div>
+                <div class="news-card animate-on-scroll">
+                    <div class="news-source">📰 Contábeis — 2025</div>
+                    <h3>"MEIs que não entregaram a DASN terão CNPJ suspenso a partir de junho"</h3>
+                    <p>A declaração anual obrigatória do MEI (DASN-SIMEI) é ignorada por milhões de microempreendedores,
+                        resultando em suspensão automática do CNPJ e perda de benefícios do INSS.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROBLEMS SECTION -->
+    <section class="problems" id="problemas">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Os <span style="color:var(--danger);">7 problemas</span> que
+                destroem MEIs no Brasil</h2>
+            <p class="section-subtitle animate-on-scroll">Se você se identifica com pelo menos um desses problemas, seu
+                negócio está em risco. E o risco é real.</p>
+            <div class="problems-grid">
+                <div class="problem-card animate-on-scroll">
+                    <div class="problem-icon">💀</div>
+                    <h3>1. DAS em atraso = CNPJ cancelado</h3>
+                    <p>Depois de 12 meses sem pagar o DAS, a Receita Federal cancela seu CNPJ automaticamente. Você
+                        perde o direito de emitir notas fiscais, acesso ao INSS e ainda acumula dívida ativa com a
+                        União.</p>
+                </div>
+                <div class="problem-card animate-on-scroll">
+                    <div class="problem-icon">📉</div>
+                    <h3>2. Faturamento acima do limite</h3>
+                    <p>Se você faturou mais que R$81.000/ano (ou R$6.750/mês), você será desenquadrado e terá que pagar
+                        impostos retroativos com multa. Muitos MEIs nem percebem que já ultrapassaram o teto.</p>
+                </div>
+                <div class="problem-card animate-on-scroll">
+                    <div class="problem-icon">📋</div>
+                    <h3>3. DASN não entregue</h3>
+                    <p>A declaração anual do MEI é obrigatória. Quem não entrega tem o CNPJ suspenso, fica impedido de
+                        gerar DAS e perde acesso a crédito e benefícios previdenciários.</p>
+                </div>
+                <div class="problem-card animate-on-scroll">
+                    <div class="problem-icon">🚫</div>
+                    <h3>4. Contratação irregular de funcionário</h3>
+                    <p>O MEI pode contratar apenas 1 funcionário. Contratações irregulares resultam em ações
+                        trabalhistas, multas pesadas e desenquadramento forçado.</p>
+                </div>
+                <div class="problem-card animate-on-scroll">
+                    <div class="problem-icon">⚠️</div>
+                    <h3>5. Misturar contas pessoais e do MEI</h3>
+                    <p>Usar a mesma conta bancária para gastos pessoais e do negócio dificulta a comprovação de renda,
+                        pode gerar malha fina no IR e inviabiliza acesso a financiamentos.</p>
+                </div>
+                <div class="problem-card animate-on-scroll">
+                    <div class="problem-icon">🏦</div>
+                    <h3>6. Perda de benefícios do INSS</h3>
+                    <p>MEI inadimplente perde direito a aposentadoria, auxílio-doença e salário-maternidade. Você pode
+                        estar pagando há anos e, por um detalhe, perder tudo.</p>
+                </div>
+                <div class="problem-card animate-on-scroll">
+                    <div class="problem-icon">📊</div>
+                    <h3>7. Não emitir nota fiscal</h3>
+                    <p>Vender para empresas sem nota fiscal é ilegal. Além de multas, você fica impossibilitado de
+                        comprovar receita para bancos, financiamentos e até aluguel de imóvel.</p>
+                </div>
+                <div class="problem-card animate-on-scroll"
+                    style="grid-column:1/-1;background:rgba(16,185,129,0.12);border:2px solid rgba(16,185,129,0.5);box-shadow:0 0 30px rgba(16,185,129,0.15),0 0 60px rgba(16,185,129,0.05);padding:2.5rem 3rem;text-align:center;">
+                    <div class="problem-icon" style="font-size:3rem;margin-bottom:1.25rem;">🛡️</div>
+                    <h3 style="color:#10b981;font-size:1.5rem;margin-bottom:1rem;">A solução: Assessoria contábil
+                        especializada</h3>
+                    <p style="font-size:1.1rem;max-width:600px;margin:0 auto 1.5rem;line-height:1.8;">Todos esses
+                        problemas são evitáveis. Com a Synexus, você tem um contador especialista em MEI
+                        cuidando de cada detalhe para que você foque no que importa: <strong
+                            style="color:#10b981;">vender e crescer.</strong></p>
+                    <button class="btn" onclick="scrollToSection('meiName')"
+                        style="background:linear-gradient(135deg,#10b981,#059669);color:#fff;box-shadow:0 4px 14px rgba(16,185,129,0.4);max-width:400px;margin:0 auto;font-size:1.05rem;">QUERO
+                        ESSA PROTEÇÃO AGORA →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOLUTION SECTION -->
+    <section class="solution-cta" id="solucoes">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Como a <span class="highlight">Synexus</span> protege seu MEI
+            </h2>
+            <p class="section-subtitle animate-on-scroll">Não somos apenas um escritório de contabilidade. Somos a
+                blindagem que seu negócio precisa.</p>
+            <div class="solution-grid">
+                <div class="solution-card animate-on-scroll">
+                    <div class="solution-icon">📱</div>
+                    <h3>Abertura e Regularização</h3>
+                    <p>Abrimos seu MEI do zero ou regularizamos pendências, DAS atrasados, DASN não entregues e dívida
+                        ativa.</p>
+                </div>
+                <div class="solution-card animate-on-scroll">
+                    <div class="solution-icon">📊</div>
+                    <h3>Controle de Faturamento</h3>
+                    <p>Monitoramos seu faturamento mensalmente para evitar surpresas com o teto e planejar o
+                        desenquadramento no momento certo.</p>
+                </div>
+                <div class="solution-card animate-on-scroll">
+                    <div class="solution-icon">📋</div>
+                    <h3>Declarações em Dia</h3>
+                    <p>Cuidamos da DASN-SIMEI, geração de DAS, e qualquer obrigação acessória. Você não precisa se
+                        preocupar com prazos.</p>
+                </div>
+                <div class="solution-card animate-on-scroll">
+                    <div class="solution-icon">🛡️</div>
+                    <h3>Proteção Previdenciária</h3>
+                    <p>Garantimos que suas contribuições estejam em dia para que você tenha acesso a aposentadoria,
+                        auxílio-doença e salário-maternidade.</p>
+                </div>
+                <div class="solution-card animate-on-scroll">
+                    <div class="solution-icon">📈</div>
+                    <h3>Planejamento de Crescimento</h3>
+                    <p>Quando seu negócio crescer além do MEI, estaremos prontos para migrar para ME ou EPP sem sustos
+                        fiscais.</p>
+                </div>
+                <div class="solution-card animate-on-scroll">
+                    <div class="solution-icon">💬</div>
+                    <h3>Suporte Direto no WhatsApp</h3>
+                    <p>Tire dúvidas rapidamente com nosso time. Sem burocracia, sem demora. Atendimento humanizado e
+                        direto.</p>
+                </div>
+            </div>
+            <button class="btn btn-danger" style="max-width:450px;margin:0 auto;font-size:1.1rem;"
+                onclick="scrollToSection('meiName')">QUERO ASSESSORIA PARA MEU MEI →</button>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta" id="finalCta">
+        <div class="container">
+            <div class="counter-badge"><span class="dot"></span> <span id="viewerCount">47</span> pessoas visualizando
+                esta página agora</div>
+            <h2 class="section-title">Não espere a Receita Federal <span style="color:var(--danger);">bater na sua
+                    porta</span></h2>
+            <p class="section-subtitle">Preencha o formulário abaixo e receba uma consultoria gratuita sobre a situação
+                do seu MEI. Sem compromisso. Sem custo.</p>
+            <div class="final-form-wrapper">
+                <div class="form-card">
+                    <h3>Solicite sua Consultoria Gratuita</h3>
+                    <p class="form-subtitle">Resposta em até 24h úteis</p>
+                    <form id="finalForm" onsubmit="handleFormSubmit(event,'finalForm')">
+                        <div class="form-row">
+                            <div class="form-group"><label for="finalName">Nome</label><input type="text" id="finalName"
+                                    name="name" placeholder="Seu nome" required></div>
+                            <div class="form-group"><label for="finalPhone">Telefone</label><input type="tel"
+                                    id="finalPhone" name="phone" placeholder="(00) 00000-0000" required></div>
+                        </div>
+                        <div class="form-group"><label for="finalService">Qual sua situação?</label>
+                            <select id="finalService" name="service">
+                                <option value="Quero abrir MEI">Quero abrir meu MEI</option>
+                                <option value="MEI com pendências">Meu MEI tem pendências</option>
+                                <option value="Declaração DASN atrasada">Declaração anual atrasada</option>
+                                <option value="DAS atrasado">DAS em atraso</option>
+                                <option value="Faturamento acima do limite">Faturamento acima do limite</option>
+                                <option value="Consultoria MEI geral">Quero assessoria contábil</option>
+                                <option value="Outros">Outra situação</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">QUERO MINHA CONSULTORIA GRATUITA →</button>
+                        <div class="success-message" id="finalSuccess">✓ Mensagem enviada! Entraremos em contato em
+                            breve.</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-brand">
+                <img src="https://yuaxrzcuqtuhxxvwmiuw.supabase.co/storage/v1/object/public/temp/synexus_logo.png"
+                    alt="Synexus">
+                <p>Assessoria contábil especializada para MEIs. Protegendo seu negócio e garantindo seu crescimento.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/synexus.solucoes/" class="social-link" title="Instagram"
+                        target="_blank" rel="noopener noreferrer"><span class="sr-only">Instagram</span><svg
+                            xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg></a>
+                    <a href="https://wa.me/5554996673370?text=Vim%20pela%20página%20MEI%20e%20preciso%20de%20assessoria%20contábil"
+                        class="social-link" title="WhatsApp" target="_blank" rel="noopener noreferrer"><span
+                            class="sr-only">WhatsApp</span><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                        </svg></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Synexus Soluções Empresariais. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToSection(id) { var el = document.getElementById(id); if (el) { el.scrollIntoView({ behavior: 'smooth' }); document.getElementById('navMobile').classList.remove('active'); } }
+        function toggleMenu() { document.getElementById('navMobile').classList.toggle('active'); }
+        async function handleFormSubmit(event, formId) {
+            event.preventDefault();
+            var form = document.getElementById(formId); var successId = formId === 'heroForm' ? 'heroSuccess' : 'finalSuccess'; var successMessage = document.getElementById(successId); var submitButton = form.querySelector('button[type="submit"]');
+            var originalButtonText = submitButton.innerHTML; submitButton.disabled = true; submitButton.innerHTML = 'Enviando...';
+            var formData = new FormData(form); var data = { name: formData.get('name'), phone: formData.get('phone'), service: formData.get('service'), formSource: 'mei_' + formId, timestamp: new Date().toISOString() };
+            try {
+                var response = await fetch('https://n8n-editor.fdje1h.easypanel.host/webhook/responses', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(data).toString() });
+                if (response.ok) {
+                    var cleanPhone = data.phone ? data.phone.replace(/\D/g, '') : ''; if (cleanPhone && !cleanPhone.startsWith('55')) cleanPhone = '55' + cleanPhone; if (cleanPhone) cleanPhone = '+' + cleanPhone;
+                    var firstName = '', lastName = ''; if (data.name) { var nameParts = data.name.trim().split(/\s+/); firstName = nameParts[0]; if (nameParts.length > 1) lastName = nameParts.slice(1).join(' '); }
+                    gtag('set', 'user_data', { "phone_number": cleanPhone, "address": { "first_name": firstName, "last_name": lastName } });
+                    gtag_report_conversion();
+                    successMessage.style.display = 'block'; successMessage.innerHTML = '✓ Mensagem enviada com sucesso! Entraremos em contato em breve.'; form.reset();
+                } else { throw new Error('Erro'); }
+            } catch (error) { console.error('Erro:', error); successMessage.style.display = 'block'; successMessage.style.background = 'linear-gradient(135deg,#ef4444,#dc2626)'; successMessage.innerHTML = '✗ Erro ao enviar. Tente novamente.'; }
+            finally { submitButton.disabled = false; submitButton.innerHTML = originalButtonText; setTimeout(() => { successMessage.style.display = 'none'; successMessage.style.background = 'linear-gradient(135deg,#10b981,#059669)'; }, 5000); }
+        }
+        function applyPhoneMask(input) { var value = input.value.replace(/\D/g, ''); if (value.length > 11) value = value.slice(0, 11); if (value.length > 6) value = '(' + value.slice(0, 2) + ') ' + value.slice(2, 7) + '-' + value.slice(7); else if (value.length > 2) value = '(' + value.slice(0, 2) + ') ' + value.slice(2); else if (value.length > 0) value = '(' + value; input.value = value; }
+        document.querySelectorAll('input[type="tel"]').forEach(function (input) { input.addEventListener('input', function () { applyPhoneMask(input); }); });
+        window.addEventListener('scroll', function () { var header = document.getElementById('header'); if (window.scrollY > 50) header.classList.add('scrolled'); else header.classList.remove('scrolled'); });
+        var observer = new IntersectionObserver(function (entries) { entries.forEach(function (entry) { if (entry.isIntersecting) entry.target.classList.add('visible'); }); }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('.animate-on-scroll').forEach(function (el) { observer.observe(el); });
+        // Fake viewer counter
+        var viewerEl = document.getElementById('viewerCount'); setInterval(function () { var current = parseInt(viewerEl.textContent); var change = Math.random() > 0.5 ? 1 : -1; var newVal = Math.max(23, Math.min(89, current + change)); viewerEl.textContent = newVal; }, 4000);
+    </script>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/5554996673370?text=Vim%20pela%20página%20MEI%20e%20preciso%20de%20assessoria%20contábil%20para%20meu%20MEI"
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <span class="sr-only">WhatsApp</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+        </svg>
+    </a>
+</body>
+
+</html>
